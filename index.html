@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form>
+            <div class="name">
+                <div class="first">
+                    <label for="first-name">First Name <span>*</span></label>
+                    <input type="text" id="first-name">
+                    <p class="required">This field is required</p>
+                </div>
+                <div class="last">
+                    <label for="last-name">Last Name <span>*</span></label>
+                    <input type="text" id="last-name">
+                    <p class="required">This field is required</p>
+                </div>
+            </div>
+            <div class="email">
+                <label for="email">Email Address <span>*</span></label>
+                <input type="email" id="email">
+                <p class="email-validation">Please eneter a valid email address</p>
+            </div>
+            <div class="query">
+                <label>Query Type <span>*</span></label>
+                <div class="general-support">
+                    <div class="general">
+                        <input type="radio" id="enquiry" name="query">
+                        <label for="enquiry">General Enquiry</label>
+                    </div>
+                    <div class="support">
+                        <input type="radio" id="request" name="query">
+                        <label for="request">Support Request</label>
+                    </div>
+                </div>
+                <p class="select">Please select a query type</p>
+
+            </div>
+
+
+            <div class="message">
+                <label for="message">Message <span>*</span></label>
+                <textarea name="message" id="message"></textarea>
+            </div>
+            <p class="required">This field is required</p>
+
+            <div class="check">
+                <input type="checkbox" name="" id="check" required>
+                <label for="check">I consent to being contacted by the team <span>*</span></label>
+            </div>
+            <p class="submit">To submit this form, please consent to being contacted</p>
+
+            <input type="submit" id="submit">
+        </form>
+    </div>
+
+
+    <script src="./script.js">
+    </script>
 </body>
+
 </html>
