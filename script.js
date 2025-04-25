@@ -77,7 +77,11 @@ sub.addEventListener("click", (e) => {
 
 
     if (boxChecked() && emailValidation(email) && radioChecked() && requiredCheck(firstName, 0) && requiredCheck(lastName, 1) && requiredCheck(textarea, 2)) {
-        alert("asd")
+        let alertbox = document.querySelector(".alertbox")
+        alertbox.style.opacity = 1
+        setTimeout(() => {
+            alertbox.style.opacity = 0
+        }, 1500);
     }
 
 })
