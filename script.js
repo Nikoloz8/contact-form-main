@@ -84,4 +84,16 @@ sub.addEventListener("click", (e) => {
         }, 1500);
     }
 
+
+    firstName.value = ""
+    lastName.value = ""
+
+    textarea.value = ""
+    email.value = ""
+
+    box.checked = false
+
+
+    type1.checked = false
+    type2.checked = false
 })
